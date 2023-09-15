@@ -1,41 +1,180 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Andrew Landry
+# Content configuration version
+version: 2
+
+# Personal info
+name: Andrew Landry
+title: Senior Software Engineer
 email: andrewjlandry@yahoo.com
-description: >- # this means to ignore newlines until "baseurl:"
-  My personal site featuring my work or hobbies
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ajlandry.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+website: www.ajlandry.com
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+#twitter_username: facespics
 github_username:  andrew-landry
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: datcajundata
+linkedin_username: andrewjlandry
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+#additional_links:
+#- title: itsgoingto.be
+#  icon: fas fa-globe
+#  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_title: About
+about_profile_image: images/watermelon.jpg
+about_content: | # this will include new lines to allow paragraphs
+  With a diverse background in E-commerce, Transportation, Oil and Gas, Healthcare and Government industries, Andrew has over 14 years of experience with application development, project management, client relations and implementing mission critical solutions. 
+  
+  He has a proven ability to new learn skills required by a project by self-learning many different programming languages. 
+      
+  Mr. Landry consistently becomes a vital resource to a project and will quickly become a “go-to” knowledge base.
+
+  He enjoys <mark>Node.js / TypeScript</mark> and <mark>Fishing</mark>
+
+content:
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: top-middle
+  #       title: Super awesome project
+  #       link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  #       description: | # this will include new lines to allow paragraphs
+  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Deliverr / Flexport
+        link: deliverr.com
+        # link_text: boringcompany.com
+        sub_title: Senior Software Engineer
+        caption: 2021 - Present
+        description: | # this will include new lines to allow paragraphs
+          [Acquired by Shopify July 2022] 
+
+          [Acquired by Flexport Jun 2023] 
+          
+          📦 Migrated key critical business logic out of an large workflow and stood them up as separate services so we could reuse the logic for future growth 
+
+          📦 Developed a project to allow merchants to purchase labels from a variety of carriers where we optimized by shipping speed and cost which leads to a reduction in label costs by 30%
+
+          📦 Active participation in L1 / L2 on-call duties for transportation systems that typically see loads of about 30 label purchase requests per sec.
+      - layout: left
+        title: Shopify
+        link: deliverr.com
+        # link_text: boringcompany.com
+        sub_title: Senior Software Engineer
+        caption: 2022 - 2023
+        description: | # this will include new lines to allow paragraphs
+          Launched Zone Skipping project which involved creating small package rates and determining which node-to-node configuration is optimal for performing a middle mile injection in order to save costs! 
+          This process was able to scale horizontally by utilizing AWS Lambdas and Gateway.
+      - layout: left
+        title: CGI Federal
+        link: cgi.com
+        # link_text: boringcompany.com
+        sub_title: Senior Software Engineer
+        caption: 2018 - 2021
+        description: | # this will include new lines to allow paragraphs
+          • Active software development and architecture of business application for large government client with a distributed project team
+
+          • Developed framework to create automated unit tests and setup environment to start automated test cases
+
+          • Main developer on back-end system for invoicing, billing and data extractions
+
+          • Assisted with contract proposals and setting up cloud based proof of concepts
+
+          • Developed solution to import data using robotic process automation
+      - layout: left
+        title: Acadiana Computer Systems
+        link: acsmd.com
+        # link_text: boringcompany.com
+        sub_title: Software Engineer
+        caption: 2015 - 2018
+        description: | # this will include new lines to allow paragraphs
+          • Team Lead for data migration project from flat file data files to a normalized database environment
+
+          • Performed data analysis for clients to determine billing rates that was acceptable for Medicare/Medicaid
+
+          • Developed dashboards to assist with contract negotiations and day-to-day business management
+      - layout: left
+        title: Dupre Logistics
+        link: duprelogistics.com
+        # link_text: boringcompany.com
+        sub_title: Programmer Analyst
+        caption: 2009 - 2014
+        description: | # this will include new lines to allow paragraphs
+          • Active development on business class mainframes with an emphasis on data integration with clients and partners
+
+          • Created user interfaces to allow drivers to input fuel tax reports that eliminate outdate processes
+
+          • Developed data replication processes and performing software / hardware maintenance on a monthly and quarterly basis
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: University of Louisiana at Lafayette
+        caption: 2006 - 2010
+        sub_title: BSc Computer Science
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          During my time at ULL I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+          I spent a lot of my free time working IT Support at *Lafayette Data Systems* and *Dupre Logistics* doing early database cleanup and simple business programming.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Fishing
+      - Gaming & Board Gaming
+      - Camping
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
 # Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+remote_theme: sproogen/resume-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
