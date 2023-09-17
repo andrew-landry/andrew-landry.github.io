@@ -42,7 +42,7 @@ linkedin_username: andrewjlandry
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"
 gtag: "UA-37388210-1"
-#google_analytics: "UA-37388210-1"
+google_analytics: "UA-37388210-1"
 
 # About Section
 about_title: About
